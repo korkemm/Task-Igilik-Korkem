@@ -1,0 +1,56 @@
+# Task 1 — Who is my DNS Server?
+
+**Student:** Igilik Korkem  
+**Group:** SW 1-24  
+
+## Commands Used
+
+First, I checked my network configuration:
+
+```cmd
+ipconfig /all
+```
+
+I looked for the **DNS Servers** field.
+
+Then I checked the IP address of `google.com`:
+
+```cmd
+nslookup google.com
+```
+
+## Results
+
+### Q1. What is the IP address of your DNS server? Is it public or private?
+
+**DNS Server:** `[YOUR DNS SERVER IP]`
+
+The DNS server is **[private/public]**.
+
+If the address starts with `192.168.x.x`, `10.x.x.x`, or `172.16.x.x – 172.31.x.x`, it is a private IP address.
+
+### Q2. Which IP address did google.com resolve to?
+
+The IP address returned for `google.com` was:
+
+**`[YOUR GOOGLE.COM IP]`**
+
+My partner got:
+
+**`[PARTNER IP]`**
+
+The results can be different because DNS servers may return different IP addresses depending on location, load balancing, caching and the DNS server being used.
+
+### Q3. Is your own laptop a DNS server?
+
+No. My laptop is normally a DNS client that sends DNS queries to a DNS server. It does not normally store and manage authoritative DNS records for the Internet.
+
+### Q4. Screenshot
+
+The screenshot below shows the commands and their results.
+
+![Task 1 Screenshot](screenshots/task1.png)
+
+## Conclusion
+
+I identified the DNS server used by my computer and checked how `google.com` was resolved to an IP address.
